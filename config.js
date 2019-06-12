@@ -1,12 +1,12 @@
 const config = {
 	"gatsby": {
 		"pathPrefix": "/",
-		"siteUrl": "https://learn.hasura.io",
+		"siteUrl": "https://genesys-rpg.com",
 		"gaTrackingId": null
 	},
 	"header": {
 		"logo": "https://graphql-engine-cdn.hasura.io/img/hasura_icon_white.svg",
-		"title": "Gatsby Gitbook Boilerplate",
+		"title": "GeneSys",
 		"githubUrl": "https://github.com/hasura/gatsby-gitbook-boilerplate",
 		"helpUrl": "",
 		"tweetText": "",
@@ -24,7 +24,7 @@ const config = {
 		]
 	},
 	"siteMetadata": {
-		"title": "Gatsby Gitbook Boilerplate | Hasura",
+		"title": "GeneSys - System Reference Document (SRD)",
 		"description": "Documentation built with mdx. Powering learn.hasura.io ",
 		"ogImage": null,
 		"docsLocation": "https://github.com/hasura/gatsby-gitbook-boilerplate/tree/master/content",

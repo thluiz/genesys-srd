@@ -40,13 +40,16 @@
     "react-github-btn": "^1.0.5",
     "react-helmet": "^5.2.0",
     "react-live": "^2.0.1",
+    "sharp": "^0.22.1",
     "system-components": "^3.0.3"
   },
   "license": "MIT",
   "main": "n/a",
   "scripts": {
     "start": "gatsby develop",
-    "build": "gatsby build --prefix-paths"
+    "build": "gatsby build",
+    "now-dev": "gatsby develop -p $PORT",
+    "now-build": "npm run build"
   },
   "devDependencies": {
     "gatsby-plugin-remove-trailing-slashes": "^2.0.11",
