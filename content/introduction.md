@@ -9,8 +9,8 @@ Texto de introdução. Aproveitando para testar o reload
 # Header H1
 Texto abaixo do header H1
 
-## Heading H2
-Heading 2 text
+## Heading H2 - Teste
+Texto abaixo do header H2 como teste
 
 ### Heading H3
 Heading 3 text
