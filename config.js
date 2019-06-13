@@ -5,9 +5,9 @@ const config = {
 		"gaTrackingId": null
 	},
 	"header": {
-		"logo": "https://graphql-engine-cdn.hasura.io/img/hasura_icon_white.svg",
+		"logo": "logo.png",
 		"title": "GeneSys",
-		"githubUrl": "https://github.com/hasura/gatsby-gitbook-boilerplate",
+		"githubUrl": "https://github.com/thluiz/genesys-srd",
 		"helpUrl": "",
 		"tweetText": "",
 		"links": [
@@ -27,8 +27,8 @@ const config = {
 		"title": "GeneSys - System Reference Document (SRD)",
 		"description": "Documentation built with mdx. Powering learn.hasura.io ",
 		"ogImage": null,
-		"docsLocation": "https://github.com/hasura/gatsby-gitbook-boilerplate/tree/master/content",
-		"favicon": "https://graphql-engine-cdn.hasura.io/img/hasura_icon_black.svg"
+		"docsLocation": "https://github.com/thluiz/genesys-srd/tree/master/content",
+		"favicon": "logo.png"
 	},
 };
 

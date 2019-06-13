@@ -1,6 +1,7 @@
 import React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
 import GitHubButton from 'react-github-btn'
+import Img from "gatsby-image";
 import Link from "./link";
 import './styles.css';
 
@@ -23,11 +24,15 @@ const Header = ({location}) => (
                 text
               }
             }
+          },
+          imageSharp {
+            fixed (width: 50, height: 50) {
+              ...GatsbyImageSharpFixed
+            }
           }
         }
         `}
     render={(data) => {
-      const logoImg = require('./images/logo.svg');
       const twitter = require('./images/twitter.svg');
       const {
         site: {
@@ -36,8 +41,7 @@ const Header = ({location}) => (
             githubUrl,
             helpUrl,
             tweetText,
-            logo,
-            headerLinks,
+            headerLinks
           }
         }
       } = data;
@@ -52,11 +56,8 @@ const Header = ({location}) => (
                 <span className={'icon-bar'}></span>
               </button>
               <Link to="/" className={'navbar-brand navBarBrand'}>
-                {logo !== '' ?
-                  (<img className={'img-responsive'} src={logo} alt={'logo'} />)
-                  :
-                  (<img className={'img-responsive'} src={logoImg} alt={'logo'} />)
-                }
+
+              <Img fixed={data.imageSharp.fixed} />
                 {headerTitle}
               </Link>
             </div>
@@ -70,13 +71,13 @@ const Header = ({location}) => (
                     (<li className={'githubBtn'}>
                       <GitHubButton href={githubUrl} data-show-count="true" aria-label="Star on GitHub">Star</GitHubButton>
                     </li>) : null}
-                  {helpUrl !== '' ? 
+                  {helpUrl !== '' ?
                     (<li><a href={helpUrl}>Need Help?</a></li>) : null
                   }
                 </ul>
               }
               <ul className={'nav navbar-nav navBarUL navbar-right'}>
-                {tweetText !== '' ? 
+                {tweetText !== '' ?
                   (<li>
                     <a href={'https://twitter.com/intent/tweet?&text=' + tweetText} target="_blank">
                       <img className={'twitterIcon'} src={twitter} alt={'Twitter'} />
