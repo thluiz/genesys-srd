@@ -9,9 +9,9 @@ import '../components/styles.css'
 import config from '../../config'
 import { MDXProvider } from '@mdx-js/react'
 
-const transformLink = (link) => link.toLocaleLowerCase().replace(/[&\/\\#,+()$~%.'":*?<>{}]/g,'').replace(/\s/g, '-')
+const convertText2Id = (link) => link.toLocaleLowerCase().replace(/[&\/\\#,+()$~%.'":*?<>{}]/g,'').replace(/\s/g, '-')
 
-const MyH1 = (props, wrapper) => <h1 id={transformLink(props.children)} {...props} />
+const MyH1 = (props, wrapper) => <h1 id={convertText2Id(props.children)} {...props} />
 
 const components = {
   h1: MyH1
