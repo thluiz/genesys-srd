@@ -146,7 +146,7 @@ const SidebarLayout = ({ location }) => (
           return 1
         })
         .map(({ node }) => node.fields.slug)
-        // .filter(slug => slug !== '/')
+        .filter(slug => slug !== '/')
         // .sort((a, b) => a.order )
         .reduce(
           (acc, cur) => {

@@ -134,7 +134,7 @@ export default class MDXRuntimeTest extends Component {
       })
 
     // meta tags
-    const metaTitle = mdx.frontmatter.metaTitle
+    const metaTitle = mdx.frontmatter.title
     const metaDescription = mdx.frontmatter.metaDescription
     let canonicalUrl = config.gatsby.siteUrl
     canonicalUrl =
@@ -211,8 +211,9 @@ export const pageQuery = graphql`
         }
       }
       frontmatter {
-        metaTitle
-        metaDescription
+        # metaTitle
+        # metaDescription
+        title
       }
     }
     allMdx {
