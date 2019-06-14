@@ -187,7 +187,7 @@ const SidebarLayout = ({ location }) => (
           let subMenus = node.tableOfContents.items.map((item) => {
             return <ListItem
               key={node.fields.slug + item.url}
-              to={`${node.fields.slug}#${item.title}`}
+              to={`${node.fields.slug}${item.url}`}
               level={node.fields.slug.split('/').length - 1}
               active={false}>
               {item.title}
