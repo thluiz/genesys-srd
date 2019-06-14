@@ -1,0 +1,4 @@
+{
+    "standard.run": "onSave",
+    "javascript.validate.enable": false
+}

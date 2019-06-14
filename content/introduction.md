@@ -2,6 +2,7 @@
 title: "Inicio"
 metaTitle: "Esse é o header"
 metaDescription: "This is the meta description"
+archived: true
 ---
 
 Texto de introdução. Aproveitando para testar o reload - Henrique Esteve Aqui
