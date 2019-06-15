@@ -79,17 +79,17 @@ module.exports = {
         short_name: config.siteTitle,
         description: config.siteDescription,
         start_url: config.pathPrefix,
-        background_color: "#F5E35C",
-        theme_color: "#bdbdbd",
+        background_color: "#372476",
+        theme_color: "#372476",
         display: "standalone",
         icons: [
           {
-            src: "logo.png",
+            src: "logo-midnight-blue.png",
             sizes: "192x192",
             type: "image/png"
           },
           {
-            src: "logo.png",
+            src: "logo-midnight-blue.png",
             sizes: "72x72 96x96 128x128 256x256"
           }
         ]

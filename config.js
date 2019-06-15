@@ -7,7 +7,7 @@ const config = {
 	"header": {
 		"logo": "logo.png",
 		"title": "GeneSys",
-		"githubUrl": "https://github.com/thluiz/genesys-srd",
+		"githubUrl": "https://github.com/grifoeditorial/genesys-srd",
 		"helpUrl": "",
 		"tweetText": "",
 		"links": [
@@ -24,10 +24,10 @@ const config = {
 	},
 	"siteMetadata": {
 		"title": "GeneSys - System Reference Document (SRD)",
-		"description": "Documentation built with mdx. Powering learn.hasura.io ",
+		"description": "Documentation built with mdx. Powering https://genesys-srd.grifo.now.sh",
 		"ogImage": null,
-		"docsLocation": "https://github.com/thluiz/genesys-srd/tree/master/content",
-		"favicon": "logo.png"
+		"docsLocation": "https://github.com/grifoeditorial/genesys-srd/tree/master/content",
+		"favicon": "logo-midnight-blue.png"
 	},
 };
 
